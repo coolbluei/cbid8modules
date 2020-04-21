@@ -1,5 +1,6 @@
 {
     "name": "coolbluei/cbid8modules",
+    "type": "drupal-module",
     "version": "0.1",
     "dist": {
         "url": "https://github.com/coolbluei/cbid8modules",
