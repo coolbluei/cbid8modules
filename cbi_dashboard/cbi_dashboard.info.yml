@@ -1,0 +1,5 @@
+name: CBI Dashboard
+type: module
+description: Provides dashboard routes and functionality
+core: 8.x
+package: Custom

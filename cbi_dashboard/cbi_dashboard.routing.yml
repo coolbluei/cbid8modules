@@ -1,0 +1,28 @@
+cbi_dashboard.dashboard:
+  path: '/admin/dashboard'
+  defaults:
+    _controller: 'Drupal\cbi_dashboard\Controller\PageController::blankContent'
+    _title: 'Dashboard'
+  requirements:
+    _permission: 'access dashboard'
+cbi_dashboard.front_hero_remove_item:
+  path: '/admin/front-page-hero/remove/{id}'
+  defaults:
+    _controller: '\Drupal\cbi_dashboard\Controller\HeroController::removeItemFront'
+    _title: ''
+  requirements:
+    _permission: 'access dashboard'
+cbi_dashboard.partner_hero_remove_item:
+  path: '/admin/partner-page-hero/remove/{id}'
+  defaults:
+    _controller: '\Drupal\cbi_dashboard\Controller\HeroController::removeItemPartner'
+    _title: ''
+  requirements:
+    _permission: 'access dashboard'
+cbi_dashboard.front_ad_remove_item:
+  path: '/admin/front-page-ad/remove/{id}'
+  defaults:
+    _controller: '\Drupal\cbi_dashboard\Controller\AdController::removeItemFront'
+    _title: ''
+  requirements:
+    _permission: 'access dashboard'
